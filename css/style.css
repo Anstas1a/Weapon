@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none !important;
+}
+ul{
+    list-style:none;
+}
+h1,h2,h3,h4,h5,h6,p,ul,ol{
+    margin: 0;
+}
+
+
+body{
+    background: #0A0A0A;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    color: #fff;
+}
+
+header{
+    background: url("../img/Backround Header.jpg");
+    background-size: cover;
+    color: #fff;
+}
+
+.button-a{
+    padding: 13px 39px !important;
+    border-radius: 200px;
+    background-color: #333333;
+    font-weight: 700;
+    color: #fff !important;
+    transition: .2s;
+    display: inline-block;
+    text-align: center;
+
+    margin-bottom: 15px;
+}
+
+.button-a:hover{
+    box-shadow: -10px 30px 50px 0px #FFD8014D;
+
+    color: #333333 !important;
+    background-color: #FFD801;
+}
+
+.nav-link{
+    font-size: 14px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 19px;
+    padding-left: 19px;
+}
+
+.headelineb{
+    margin-left: 13px;
+}
+
+nav{
+    margin-bottom: 200px;
+    padding-top: 32px !important;
+}
+
+.navbar{
+    padding: 0px;
+}
+
+h1{
+    font-size: 48px;
+    max-width: 600px;
+    margin: 0 auto 32px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+header p{
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.lastb{
+    margin-bottom: 160px;
+}
+
+section{
+    margin: 88px 0;
+}
+
+.title{
+    color: #FFD801 !important;
+    font-size: 16px;
+    margin-left: 70px;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 18px;
+}
+
+.title::before{
+    position: absolute;
+    top: 12px;
+    left: -64px;
+    content: "";
+    display: block;
+    width: 48px;
+    height: 1.5px;
+    background-color: #FFD801;
+}
+
+.subtitle{
+    font-size: 32px;
+    max-width: 300px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.text_subtitle{
+    color: #ABAFC7;
+    margin-bottom: 32px;
+    width: 75%;
+}
+
+.about_us .button-a:last-child{
+    padding: 13px 66px !important;
+    margin-left: 18px;
+}
+
+@media (min-width: 300px) and (max-width:500px) {
+    .about_us .button-a:last-child{
+        margin-left: 0px;
+    }
+}
+
+section {
+    margin: 50px 0;
+}
+.price {
+    background: #181818;
+    border-radius: 22.15px;
+    display: block;
+    
+    width: 100%;
+    height: 70%;
+
+    margin-bottom: 25px;
+    padding-top: 65px;
+    padding-bottom: 3px;
+}
+
+
+.price_title::before {
+    position: relative;
+    content: "";
+    display: block;
+
+    top: -35px;
+
+    width: 60px;
+    height: 60px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+
+    background: #FFD801;
+    box-shadow: -16.6125px 22.15px 55.375px rgba(255, 216, 1, 0.3);
+}
+
+.price_title {
+    font-family: 'Nunito', sans-serif;;
+    font-size: 22px;
+    margin-left: 35px;
+}
+
+.price_subtitle {
+    color: #ABAFC7;
+    width: 75%;
+    font-size: 12px;
+    margin: 10px 20px 30px 35px;
+}
+
+.price_name {
+    margin-left: 150px;
+}
+
+@media (min-width: 300px) and (max-width:500px) {
+    .price_name {
+        margin-left: 0px;
+        margin-top: 25px;
+    }
+}
+
+
+.icons {
+    background: #181818CC;
+}
+
+.image_icons {
+    margin: 35px 45px;
+}
+
+.size1 {
+    width: 4%;
+}
+
+.size {
+    width: 13%;
+}
+
+@media (min-width: 300px) and (max-width:500px) {
+    .icons {
+        display: none;
+    }
+}
+
+.catalog {
+    margin-top: 130px !important;
+}
+
+.catalog_title {
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+   
+    font-weight: 700;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.active_text {
+    font-weight: bold;
+    color: #FFD801 !important; 
+}
+
+.about_mel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about_mel_item:hover img {
+    opacity: .6;
+}
+
+.about_mel_item:hover .about_image{
+    opacity: 1;
+}
+
+.about_mel_item {
+    width: 32%;
+    background: #00000099;
+    border-radius: 20px;
+    position: relative;
+}
+
+.mel_image {
+    border-radius: 20px;
+    width: 100%;
+    transition: opacity .1s linear;
+}
+
+.about_image {
+    vertical-align: middle;
+    width: 100%;
+
+    opacity: 0;
+    transition: opacity .1s linear;
+
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    z-index: 2;
+    transform: translate3d(0, -50%, 0);
+}
+
+.about_text_title {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+@media (min-width: 300px) and (max-width:500px) {
+    .about_text_title{
+        font-size: 10px;
+    }
+}
+ 
+.about_text_subtitle {
+    font-size: 16px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+@media (min-width: 300px) and (max-width:500px) {
+    .about_text_subtitle{
+        font-size: 8px;
+    }
+}
+
+.about_image_button {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+@media (min-width: 300px) and (max-width:500px) {
+    .about_mel_item .about_image .button-a:last-child{
+        padding: 2px 0px !important;
+        width: 80px;
+        height: 20px;
+
+        margin-bottom: 0px;
+        font-size: 10px;
+    }
+}
+
+
+.text_logo {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.text_title {
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+}
+
+@media (min-width: 300px) and (max-width:500px) {
+    .text_title {
+        margin-top: 15px;
+    }
+}
+
+.text_subtitle_footer {
+    color: #ABAFC7;
+    font-weight: 500;
+    font-size: 11px;
+    margin-bottom: 25px;
+}
+
+@media (min-width: 300px) and (max-width:500px) {
+    .text_subtitle_footer {
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 300px) and (max-width:500px) {
+    .text_title {
+        margin-top: 20px;
+    }
+}
+
+.button-b {
+    font-size: 13px;
+}
+
+hr {
+    color: #212C3A;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #EEEEEE -moz-use-text-color #FFFFFF;
+    border-style: solid none;
+    border-width: 1px 0;
+    margin: 18px 0;
+}
